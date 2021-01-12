@@ -12,9 +12,7 @@ class UserRepositoryImpl @Inject constructor(
 
 ) : UserRepository {
 
-    /**
-     * Fetches 4 characters
-     */
+
     override suspend fun fetchUserPage(offset: Int): List<Listfake> {
         val usersList: List<Listfake>
         val cachedUser = userDao.getUser(offset)

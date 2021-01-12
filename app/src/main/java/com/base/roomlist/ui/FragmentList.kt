@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
 import com.base.roomlist.databinding.FragmentListBinding
+import com.base.roomlist.model.FakeData
 import com.base.roomlist.ui.adapter.UsersAdapter
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collectLatest
@@ -46,6 +47,7 @@ class FragmentList : Fragment() {
                 userAdapter.submitData(pagingData)
 
             }
+      //      FakeData()
         }
     }
 }

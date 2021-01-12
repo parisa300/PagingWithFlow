@@ -50,9 +50,7 @@ class UsersAdapter(function: () -> Unit) : PagingDataAdapter<Listfake, UsersAdap
         }
     }
 
-    /**
-     * Helper class to represent the character displayed on the UI
-     */
+
     data class UserListItem(val id: Int,  val name: String,val description :String)
 
     companion object {
