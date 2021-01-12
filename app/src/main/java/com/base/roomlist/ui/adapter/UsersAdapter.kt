@@ -42,7 +42,9 @@ class UsersAdapter(function: () -> Unit) : PagingDataAdapter<Listfake, UsersAdap
             items: UserListItem
 
         ) {
-            binding.user
+            binding.user ?.id
+            binding.name.text ="parisa"
+            binding.desc.text="mahmoodi"
             ViewCompat.setTransitionName(binding.root, "${items.id}")
 
         }

@@ -18,7 +18,7 @@ class UserPagingSource(
                 nextKey = nextPageNumber + 4
             )
         } catch (e: UnknownHostException) {
-            // Unable to connect to the network
+
             LoadResult.Error(e)
         }
     }
