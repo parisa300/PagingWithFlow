@@ -1,6 +1,7 @@
 package com.base.roomlist.utils
 
 
+import android.annotation.SuppressLint
 import android.view.View
 import android.widget.ProgressBar
 import android.widget.TextView
@@ -10,6 +11,8 @@ import androidx.databinding.BindingAdapter
 import androidx.paging.LoadState
 import androidx.recyclerview.widget.RecyclerView
 import com.base.roomlist.R
+import com.base.roomlist.model.FakeData
+import com.base.roomlist.model.Listfake
 
 
 @BindingAdapter("adapter")
@@ -55,7 +58,25 @@ fun bindVisibility(view: View, isVisible: Boolean) {
     view.visibility = if (isVisible) View.VISIBLE else View.GONE
 }
 
+@SuppressLint("StringFormatInvalid")
+@BindingAdapter("firstname", "desc")
+fun bindCharacterBiography(
+    firstname: TextView,
+    desc :TextView,
+    listfake: Listfake
 
+){
+
+    val context = firstname.context
+   // val context1 = desc.context
+    var Text = ""
+    firstname.text= listfake.name.toString()
+    desc.text= R.string.label_name.toString()
+
+
+        Text += context.getString(R.string.label_name, listfake.name)
+
+}
 
 
 
