@@ -22,6 +22,7 @@ class UsersAdapter(function: () -> Unit) : PagingDataAdapter<Listfake, UsersAdap
     }
 
     override fun onBindViewHolder(holder: CharacterViewHolder, position: Int) {
+
         val user = getItem(position)
         user?.let {
             val userItem = UserListItem(
@@ -43,8 +44,8 @@ class UsersAdapter(function: () -> Unit) : PagingDataAdapter<Listfake, UsersAdap
 
         ) {
             binding.user ?.id
-            binding.name.text ="parisa"
-            binding.desc.text="mahmoodi"
+            binding.name.text =items.name
+            binding.desc.text=items.description
             ViewCompat.setTransitionName(binding.root, "${items.id}")
 
         }

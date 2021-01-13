@@ -1,6 +1,8 @@
 package com.base.roomlist.ui
 
+import android.annotation.SuppressLint
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -33,6 +35,7 @@ class FragmentList : Fragment() {
     }
 
 
+    @SuppressLint("LogNotTimber")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
@@ -45,7 +48,7 @@ class FragmentList : Fragment() {
         lifecycleScope.launch {
             viewModel.flow.collectLatest { pagingData ->
                 userAdapter.submitData(pagingData)
-
+                  Log.i("logkon",pagingData.toString())
             }
       //      FakeData()
         }
