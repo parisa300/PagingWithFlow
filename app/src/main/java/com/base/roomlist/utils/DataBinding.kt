@@ -11,7 +11,6 @@ import androidx.databinding.BindingAdapter
 import androidx.paging.LoadState
 import androidx.recyclerview.widget.RecyclerView
 import com.base.roomlist.R
-import com.base.roomlist.model.FakeData
 import com.base.roomlist.model.Listfake
 
 

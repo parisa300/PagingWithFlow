@@ -1,8 +1,8 @@
-package com.base.roomlist.model.db
+package com.base.roomlist.data.local
 
 import androidx.paging.PagingSource
 import com.base.roomlist.model.Listfake
-import com.base.roomlist.repository.UserRepository
+import com.base.roomlist.domain.repository.UserRepository
 import java.net.UnknownHostException
 
 class UserPagingSource(

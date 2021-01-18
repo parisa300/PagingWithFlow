@@ -2,8 +2,8 @@ package com.base.roomlist.di
 
 import android.app.Application
 import androidx.room.Room
-import com.base.roomlist.model.db.AppDatabase
-import com.base.roomlist.model.db.UserDao
+import com.base.roomlist.data.local.AppDatabase
+import com.base.roomlist.data.local.UserDao
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -24,7 +24,7 @@ object LocalDatabaseModule {
     }
 
     @Provides
-    fun provideCharacterDao(appDatabase: AppDatabase): UserDao {
+    fun provideUserDao(appDatabase: AppDatabase): UserDao {
         return appDatabase.userDao()
     }
 }

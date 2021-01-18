@@ -1,8 +1,8 @@
-package com.base.roomlist.repository
+package com.base.roomlist.domain.repository
 
 import com.base.roomlist.model.FakeData
 import com.base.roomlist.model.Listfake
-import com.base.roomlist.model.db.UserDao
+import com.base.roomlist.data.local.UserDao
 
 import javax.inject.Inject
 
@@ -27,5 +27,10 @@ class UserRepositoryImpl @Inject constructor(
     }
 
 
+/*    fun getUsers() = performGetOperation(
+        databaseQuery = { localDataSource.getAllUsers() },
+        networkCall = { remoteDataSource.getUsers() },
+        saveCallResult = { localDataSource.insertAll(it.data) }
+    )*/
 
 }

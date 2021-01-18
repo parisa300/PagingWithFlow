@@ -1,6 +1,5 @@
-package com.base.roomlist.model.db
+package com.base.roomlist.data.local
 
-import androidx.paging.PagingSource
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy

@@ -1,9 +1,9 @@
 package com.base.roomlist.di
 
 import com.base.roomlist.model.FakeData
-import com.base.roomlist.model.db.UserDao
-import com.base.roomlist.repository.UserRepository
-import com.base.roomlist.repository.UserRepositoryImpl
+import com.base.roomlist.data.local.UserDao
+import com.base.roomlist.domain.repository.UserRepository
+import com.base.roomlist.domain.repository.UserRepositoryImpl
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

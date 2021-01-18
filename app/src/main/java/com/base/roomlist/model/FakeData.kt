@@ -1,6 +1,5 @@
 package com.base.roomlist.model
 
-import dagger.Provides
 import javax.inject.Inject
 
 
